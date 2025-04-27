@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Kumbh Sans", sans-serif;
+    background-color: hsl(185, 75%, 39%);
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pattern-top{
+    position: fixed;
+    top: -20%;
+    left: -40%;
+
+    pointer-events: none;
+    z-index: 0;
+
+}
+.pattern-bottom{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 100vw;
+    max-height: 100vh;
+    pointer-events: none; /* important so user clicks pass through */
+    z-index: 0; /* behind everything */
+
+}
+img{
+    max-width: 100%;
+}
+.main{
+    background-color: white;
+    max-width: 345px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    border-radius: 15px;
+}
+.img-container{
+    position: relative;
+    margin-block-end: 4rem;
+}
+.main__img{
+    border-radius: 15px 15px 0 0;
+}
+
+.main__pfp{
+    position: absolute;
+    top: 60%;
+    left: 36%;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.main__name{
+    font-size: 1.125rem;
+    color: hsl(229, 23%, 23%);
+}
+.main__age{
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    margin-inline: .25rem;
+}
+.main__city{
+    color: hsl(227, 10%, 46%);
+    margin-block: 1rem 1.5rem;
+}
+
+.main__stats{
+    padding: 1.75rem 2.625rem;
+    border-top: .5px solid hsla(231, 3%, 55%, 0.445);
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+}
+.main__stats p{
+    font-weight: 700;
+    font-size: 1.125rem;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.main__stats span{
+    color: hsl(227, 10%, 46%);
+    font-size: .8rem;
+    font-weight: 400;
+    letter-spacing: .2ch;
+    margin-block-start: .25rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .pattern-top{
+        top: -60%;
+        left: -50%;
+    }
+    .pattern-bottom{
+        top: 50%;
+        left: 50%;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pattern-top{
+        top: -50%;
+        left: -20%;
+    }
+    .pattern-bottom{
+        top: 50%;
+        left: 50%;
+        max-width: 100vw;
+        max-height: 100vh;
+    }
+}
