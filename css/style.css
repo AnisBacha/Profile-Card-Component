@@ -19,7 +19,7 @@ body{
     background-size: auto, auto;
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed, fixed;
-    background-position: calc(50% + -27em) calc(50% + -27em), calc(50% - -28em) calc(50% - -32.6em);
+    background-position: calc(50% + -30em) calc(50% + -27em), calc(50% - -28em) calc(50% - -32.6em);
 }
 
 img{
@@ -63,12 +63,13 @@ img{
 }
 .main__city{
     color: hsl(227, 10%, 46%);
-    margin-block: 1rem 1.5rem;
+    font-size: .925rem;
+    margin-block: .85rem 1.5rem;
 }
 
 .main__stats{
     padding: 1.75rem 2.625rem;
-    border-top: .5px solid hsla(231, 3%, 55%, 0.445);
+    border-top: .5px solid hsla(231, 3%, 55%, 0.137);
     display: flex;
     justify-content: space-between;
     min-width: 100%;
