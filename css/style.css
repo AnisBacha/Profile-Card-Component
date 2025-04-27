@@ -14,27 +14,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-size: auto, auto;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+    background-position: calc(50% + -27em) calc(50% + -27em), calc(50% - -28em) calc(50% - -32.6em);
 }
 
-.pattern-top{
-    position: fixed;
-    top: -20%;
-    left: -40%;
-
-    pointer-events: none;
-    z-index: 0;
-
-}
-.pattern-bottom{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 100vw;
-    max-height: 100vh;
-    pointer-events: none; /* important so user clicks pass through */
-    z-index: 0; /* behind everything */
-
-}
 img{
     max-width: 100%;
 }
@@ -87,6 +74,7 @@ img{
     min-width: 100%;
 }
 .main__stats p{
+    color: hsl(229, 23%, 23%);
     font-weight: 700;
     font-size: 1.125rem;
 
@@ -96,34 +84,8 @@ img{
 }
 .main__stats span{
     color: hsl(227, 10%, 46%);
-    font-size: .8rem;
+    font-size: .65rem;
     font-weight: 400;
     letter-spacing: .2ch;
     margin-block-start: .25rem;
-}
-
-@media screen and (min-width: 1024px) {
-    .pattern-top{
-        top: -60%;
-        left: -50%;
-    }
-    .pattern-bottom{
-        top: 50%;
-        left: 50%;
-        max-width: 100vw;
-        max-height: 100vh;
-    }
-}
-
-@media screen and (min-width: 1440px) {
-    .pattern-top{
-        top: -50%;
-        left: -20%;
-    }
-    .pattern-bottom{
-        top: 50%;
-        left: 50%;
-        max-width: 100vw;
-        max-height: 100vh;
-    }
 }
